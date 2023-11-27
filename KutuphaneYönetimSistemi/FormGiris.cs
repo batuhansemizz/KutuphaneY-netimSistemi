@@ -5,7 +5,7 @@ namespace KutuphaneYönetimSistemi
 {
     public partial class FormGiris : Form
     {
-       FormKitaplar formKitaplar;
+        FormKitaplar formKitaplar;
         public FormGiris()
         {
             InitializeComponent();

@@ -29,28 +29,26 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            buttonAra = new Button();
+            buttonTemizle = new Button();
             buttonKitapBİlgiGüncelle = new Button();
             buttonKitapEkle = new Button();
-            textBoxKitapTürKodu = new TextBox();
+            textBoxKitapTurKodu = new TextBox();
             textBoxISBN = new TextBox();
             textBoxYazarSoyAd = new TextBox();
             textBoxYazarAdı = new TextBox();
             textBoxKitapAdı = new TextBox();
-            label11 = new Label();
-            label9 = new Label();
-            label7 = new Label();
-            label5 = new Label();
-            label3 = new Label();
-            label12 = new Label();
+            labelKitapTurKod = new Label();
             label10 = new Label();
-            label8 = new Label();
+            labelYazarSoyad = new Label();
             label6 = new Label();
             label4 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            label = new Label();
+            labelID = new Label();
             groupBox2 = new GroupBox();
+            button2 = new Button();
             buttonKitapOdunc = new Button();
-            dateTimePicker1 = new DateTimePicker();
+            dateTimePickerOduncAlmaTarihi = new DateTimePicker();
             textBoxOduncAlan = new TextBox();
             label13 = new Label();
             label14 = new Label();
@@ -70,138 +68,112 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(buttonAra);
+            groupBox1.Controls.Add(buttonTemizle);
             groupBox1.Controls.Add(buttonKitapBİlgiGüncelle);
             groupBox1.Controls.Add(buttonKitapEkle);
-            groupBox1.Controls.Add(textBoxKitapTürKodu);
+            groupBox1.Controls.Add(textBoxKitapTurKodu);
             groupBox1.Controls.Add(textBoxISBN);
             groupBox1.Controls.Add(textBoxYazarSoyAd);
             groupBox1.Controls.Add(textBoxYazarAdı);
             groupBox1.Controls.Add(textBoxKitapAdı);
-            groupBox1.Controls.Add(label11);
-            groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(labelKitapTurKod);
             groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(labelYazarSoyad);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label);
+            groupBox1.Controls.Add(labelID);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(307, 344);
+            groupBox1.Size = new Size(498, 344);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Kİtap Kayıt ve güncelleme";
             // 
+            // buttonAra
+            // 
+            buttonAra.Location = new Point(372, 145);
+            buttonAra.Name = "buttonAra";
+            buttonAra.Size = new Size(120, 29);
+            buttonAra.TabIndex = 24;
+            buttonAra.Text = "Ara";
+            buttonAra.UseVisualStyleBackColor = true;
+            buttonAra.Click += buttonAra_Click;
+            // 
+            // buttonTemizle
+            // 
+            buttonTemizle.Location = new Point(371, 75);
+            buttonTemizle.Name = "buttonTemizle";
+            buttonTemizle.Size = new Size(121, 29);
+            buttonTemizle.TabIndex = 23;
+            buttonTemizle.Text = "Temizle";
+            buttonTemizle.UseVisualStyleBackColor = true;
+            buttonTemizle.Click += buttonTemizle_Click;
+            // 
             // buttonKitapBİlgiGüncelle
             // 
-            buttonKitapBİlgiGüncelle.Location = new Point(12, 292);
+            buttonKitapBİlgiGüncelle.Location = new Point(152, 296);
             buttonKitapBİlgiGüncelle.Name = "buttonKitapBİlgiGüncelle";
-            buttonKitapBİlgiGüncelle.Size = new Size(134, 29);
+            buttonKitapBİlgiGüncelle.Size = new Size(197, 29);
             buttonKitapBİlgiGüncelle.TabIndex = 22;
             buttonKitapBİlgiGüncelle.Text = "Kitap Bilgileri Güncelle";
             buttonKitapBİlgiGüncelle.UseVisualStyleBackColor = true;
+            buttonKitapBİlgiGüncelle.Click += buttonKitapBİlgiGüncelle_Click;
             // 
             // buttonKitapEkle
             // 
-            buttonKitapEkle.Location = new Point(152, 292);
+            buttonKitapEkle.Location = new Point(371, 110);
             buttonKitapEkle.Name = "buttonKitapEkle";
-            buttonKitapEkle.Size = new Size(125, 29);
+            buttonKitapEkle.Size = new Size(121, 29);
             buttonKitapEkle.TabIndex = 21;
             buttonKitapEkle.Text = "Yeni Kitap Ekle";
             buttonKitapEkle.UseVisualStyleBackColor = true;
+            buttonKitapEkle.Click += buttonKitapEkle_Click;
             // 
-            // textBoxKitapTürKodu
+            // textBoxKitapTurKodu
             // 
-            textBoxKitapTürKodu.Location = new Point(152, 249);
-            textBoxKitapTürKodu.Name = "textBoxKitapTürKodu";
-            textBoxKitapTürKodu.Size = new Size(125, 27);
-            textBoxKitapTürKodu.TabIndex = 20;
+            textBoxKitapTurKodu.Location = new Point(152, 249);
+            textBoxKitapTurKodu.Name = "textBoxKitapTurKodu";
+            textBoxKitapTurKodu.Size = new Size(197, 27);
+            textBoxKitapTurKodu.TabIndex = 20;
             // 
             // textBoxISBN
             // 
             textBoxISBN.Location = new Point(152, 208);
             textBoxISBN.Name = "textBoxISBN";
-            textBoxISBN.Size = new Size(125, 27);
+            textBoxISBN.Size = new Size(197, 27);
             textBoxISBN.TabIndex = 19;
             // 
             // textBoxYazarSoyAd
             // 
             textBoxYazarSoyAd.Location = new Point(152, 166);
             textBoxYazarSoyAd.Name = "textBoxYazarSoyAd";
-            textBoxYazarSoyAd.Size = new Size(125, 27);
+            textBoxYazarSoyAd.Size = new Size(197, 27);
             textBoxYazarSoyAd.TabIndex = 18;
             // 
             // textBoxYazarAdı
             // 
             textBoxYazarAdı.Location = new Point(152, 119);
             textBoxYazarAdı.Name = "textBoxYazarAdı";
-            textBoxYazarAdı.Size = new Size(125, 27);
+            textBoxYazarAdı.Size = new Size(197, 27);
             textBoxYazarAdı.TabIndex = 17;
             // 
             // textBoxKitapAdı
             // 
             textBoxKitapAdı.Location = new Point(152, 75);
             textBoxKitapAdı.Name = "textBoxKitapAdı";
-            textBoxKitapAdı.Size = new Size(125, 27);
+            textBoxKitapAdı.Size = new Size(197, 27);
             textBoxKitapAdı.TabIndex = 16;
             // 
-            // label11
+            // labelKitapTurKod
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(131, 249);
-            label11.Name = "label11";
-            label11.Size = new Size(15, 20);
-            label11.TabIndex = 15;
-            label11.Text = "-";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(60, 208);
-            label9.Name = "label9";
-            label9.Size = new Size(15, 20);
-            label9.TabIndex = 14;
-            label9.Text = "-";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(114, 166);
-            label7.Name = "label7";
-            label7.Size = new Size(15, 20);
-            label7.TabIndex = 13;
-            label7.Text = "-";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(83, 126);
-            label5.Name = "label5";
-            label5.Size = new Size(15, 20);
-            label5.TabIndex = 12;
-            label5.Text = "-";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(75, 82);
-            label3.Name = "label3";
-            label3.Size = new Size(15, 20);
-            label3.TabIndex = 11;
-            label3.Text = "-";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(6, 249);
-            label12.Name = "label12";
-            label12.Size = new Size(119, 20);
-            label12.TabIndex = 10;
-            label12.Text = "Kitap Türü Kodu:";
+            labelKitapTurKod.AutoSize = true;
+            labelKitapTurKod.Location = new Point(6, 249);
+            labelKitapTurKod.Name = "labelKitapTurKod";
+            labelKitapTurKod.Size = new Size(119, 20);
+            labelKitapTurKod.TabIndex = 10;
+            labelKitapTurKod.Text = "Kitap Türü Kodu:";
             // 
             // label10
             // 
@@ -212,14 +184,14 @@
             label10.TabIndex = 8;
             label10.Text = "ISBN :";
             // 
-            // label8
+            // labelYazarSoyad
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 166);
-            label8.Name = "label8";
-            label8.Size = new Size(102, 20);
-            label8.TabIndex = 6;
-            label8.Text = "YAzar SoyAD :";
+            labelYazarSoyad.AutoSize = true;
+            labelYazarSoyad.Location = new Point(6, 166);
+            labelYazarSoyad.Name = "labelYazarSoyad";
+            labelYazarSoyad.Size = new Size(102, 20);
+            labelYazarSoyad.TabIndex = 6;
+            labelYazarSoyad.Text = "YAzar SoyAD :";
             // 
             // label6
             // 
@@ -239,37 +211,47 @@
             label4.TabIndex = 2;
             label4.Text = "Kitap Adı";
             // 
-            // label2
+            // label
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(75, 41);
-            label2.Name = "label2";
-            label2.Size = new Size(15, 20);
-            label2.TabIndex = 1;
-            label2.Text = "-";
+            label.AutoSize = true;
+            label.Location = new Point(6, 44);
+            label.Name = "label";
+            label.Size = new Size(63, 20);
+            label.TabIndex = 1;
+            label.Text = "Kitap ID";
             // 
-            // label1
+            // labelID
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 41);
-            label1.Name = "label1";
-            label1.Size = new Size(70, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Kitap ID :";
+            labelID.AutoSize = true;
+            labelID.Location = new Point(152, 41);
+            labelID.Name = "labelID";
+            labelID.Size = new Size(15, 20);
+            labelID.TabIndex = 0;
+            labelID.Text = "-";
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(button2);
             groupBox2.Controls.Add(buttonKitapOdunc);
-            groupBox2.Controls.Add(dateTimePicker1);
+            groupBox2.Controls.Add(dateTimePickerOduncAlmaTarihi);
             groupBox2.Controls.Add(textBoxOduncAlan);
             groupBox2.Controls.Add(label13);
             groupBox2.Controls.Add(label14);
-            groupBox2.Location = new Point(336, 12);
+            groupBox2.Location = new Point(516, 12);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(329, 344);
+            groupBox2.Size = new Size(335, 344);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
             groupBox2.Text = "Kitap Ödünç Alma";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(113, 284);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 20;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
             // 
             // buttonKitapOdunc
             // 
@@ -279,13 +261,14 @@
             buttonKitapOdunc.TabIndex = 19;
             buttonKitapOdunc.Text = "Kİtabı Ödünç Ver";
             buttonKitapOdunc.UseVisualStyleBackColor = true;
+            buttonKitapOdunc.Click += buttonKitapOdunc_Click;
             // 
-            // dateTimePicker1
+            // dateTimePickerOduncAlmaTarihi
             // 
-            dateTimePicker1.Location = new Point(136, 82);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(138, 27);
-            dateTimePicker1.TabIndex = 18;
+            dateTimePickerOduncAlmaTarihi.Location = new Point(136, 82);
+            dateTimePickerOduncAlmaTarihi.Name = "dateTimePickerOduncAlmaTarihi";
+            dateTimePickerOduncAlmaTarihi.Size = new Size(138, 27);
+            dateTimePickerOduncAlmaTarihi.TabIndex = 18;
             // 
             // textBoxOduncAlan
             // 
@@ -318,9 +301,9 @@
             groupBox3.Controls.Add(labelGecikmeBedeli);
             groupBox3.Controls.Add(buttonGecikmeBedeliHesapla);
             groupBox3.Controls.Add(label15);
-            groupBox3.Location = new Point(683, 12);
+            groupBox3.Location = new Point(857, 12);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(304, 344);
+            groupBox3.Size = new Size(386, 344);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "Kitap İade İşlemleri";
@@ -333,6 +316,7 @@
             buttonKitabıİadeEt.TabIndex = 6;
             buttonKitabıİadeEt.Text = "Kitabı İade Et";
             buttonKitabıİadeEt.UseVisualStyleBackColor = true;
+            buttonKitabıİadeEt.Click += buttonKitabıİadeEt_Click;
             // 
             // labelGecikmeBedeli
             // 
@@ -351,6 +335,7 @@
             buttonGecikmeBedeliHesapla.TabIndex = 4;
             buttonGecikmeBedeliHesapla.Text = "Gecikme Bedeli Gör";
             buttonGecikmeBedeliHesapla.UseVisualStyleBackColor = true;
+            buttonGecikmeBedeliHesapla.Click += buttonGecikmeBedeliHesapla_Click;
             // 
             // label15
             // 
@@ -363,21 +348,23 @@
             // 
             // dataGridViewKitaplar
             // 
+            dataGridViewKitaplar.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewKitaplar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewKitaplar.Dock = DockStyle.Fill;
             dataGridViewKitaplar.Location = new Point(3, 23);
             dataGridViewKitaplar.Name = "dataGridViewKitaplar";
             dataGridViewKitaplar.RowHeadersWidth = 51;
             dataGridViewKitaplar.RowTemplate.Height = 29;
-            dataGridViewKitaplar.Size = new Size(963, 146);
+            dataGridViewKitaplar.Size = new Size(1225, 242);
             dataGridViewKitaplar.TabIndex = 3;
+            dataGridViewKitaplar.CellClick += dataGridViewKitaplar_CellClick;
             // 
             // groupBox4
             // 
             groupBox4.Controls.Add(dataGridViewKitaplar);
             groupBox4.Location = new Point(12, 374);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(969, 172);
+            groupBox4.Size = new Size(1231, 268);
             groupBox4.TabIndex = 4;
             groupBox4.TabStop = false;
             groupBox4.Text = "Kitap Listesi";
@@ -387,13 +374,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCoral;
-            ClientSize = new Size(999, 557);
+            ClientSize = new Size(1255, 651);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "FormKitaplar";
             Text = "BS Kutuphane Kitap Yönetim Sistemi";
+            Load += FormKitaplar_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -408,13 +396,13 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Label label12;
+        private Label labelKitapTurKod;
         private Label label10;
-        private Label label8;
+        private Label labelYazarSoyad;
         private Label label6;
         private Label label4;
-        private Label label2;
-        private Label label1;
+        private Label labelID;
+        private Label label;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private TextBox textBoxKitapTürKodu;
@@ -422,11 +410,6 @@
         private TextBox textBoxYazarSoyAd;
         private TextBox textBoxYazarAdı;
         private TextBox textBoxKitapAdı;
-        private Label label11;
-        private Label label9;
-        private Label label7;
-        private Label label5;
-        private Label label3;
         private Button buttonKitapBİlgiGüncelle;
         private Button buttonKitapEkle;
         private DataGridView dataGridViewKitaplar;
@@ -440,5 +423,11 @@
         private Button buttonKitapOdunc;
         private Button buttonKitabıİadeEt;
         private Label labelGecikmeBedeli;
+        private TextBox textBoxKitapTurKodu;
+        private Label label2;
+        private DateTimePicker dateTimePickerOduncAlmaTarihi;
+        private Button buttonTemizle;
+        private Button button2;
+        private Button buttonAra;
     }
 }
